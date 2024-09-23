@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- TextView: Số A -->
+    <TextView
+        android:id="@+id/SoA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số A"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- TextView: Số B -->
+    <TextView
+        android:id="@+id/SoB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/SoA"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp" />
+
+    <!-- EditText: Nhập số A -->
+    <EditText
+        android:id="@+id/txtX"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số A"
+        android:gravity="center"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@id/SoA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/SoA"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <!-- EditText: Nhập số B -->
+    <EditText
+        android:id="@+id/txtY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nhập số B"
+        android:gravity="center"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toEndOf="@id/SoB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/SoB"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <!-- TextView: Kết quả -->
+    <TextView
+        android:id="@+id/txtKQ"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kết quả: "
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/txtY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <!-- LinearLayout: Các nút tính toán -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/txtKQ"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp">
+
+        <!-- Button: Cộng -->
+        <Button
+            android:id="@+id/btnPlus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cộng"
+            android:layout_margin="10dp" />
+
+        <!-- Button: Trừ -->
+        <Button
+            android:id="@+id/btnMinus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trừ"
+            android:layout_margin="10dp" />
+
+        <!-- Button: Nhân -->
+        <Button
+            android:id="@+id/btnMultifly"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nhân"
+            android:layout_margin="10dp" />
+
+        <!-- Button: Chia -->
+        <Button
+            android:id="@+id/btnDivide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chia"
+            android:layout_margin="10dp" />
+
+        <!-- Button: Ước chung lớn nhất -->
+        <Button
+            android:id="@+id/btnUCLN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UCLN"
+            android:layout_margin="10dp" />
+
+        <!-- Button: Thoát -->
+        <Button
+            android:id="@+id/btnOut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thoát"
+            android:textColor="#FF5454"
+            android:layout_margin="10dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

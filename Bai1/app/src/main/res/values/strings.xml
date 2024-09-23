@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bai1</string>
+    <string name="result">Kết quả</string>
+    <string name="plus">Cộng 2 số</string>
+    <string name="minus">Trừ 2 số</string>
+    <string name="multifly">Nhân 2 số</string>
+    <string name="divide">Chia 2 số</string>
+    <string name="ucln">Ước chung lớn nhất</string>
+    <string name="out">Thoát chương trình </string>
+</resources>
